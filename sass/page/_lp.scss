@@ -1,10 +1,6 @@
 .lp {
     text-align: left;
-    input[type="checkbox"], input[type="radio"] {
-        border-radius: 30px;
-        width: 1.5em;
-        height: 1.5em;
-    }
+
     .function{
         margin: 0.5em 0 0.5em;
 
@@ -128,10 +124,39 @@
     font-weight: bold;
 }
 .temporary{
+    background: url('../images/icon-temporary2.png')no-repeat left top;
+    background-size: 22px auto;
+    padding: 0 0 1px 26px;
+    display: inline-block;
+    text-align: left;
+    min-width: 9em;
+
+    &:hover{
+       background: url('../images/icon-temporary.png')no-repeat left top;
+       background-size: 22px auto;   
+   }
+
+}
+.temporary2{
     background: url('../images/icon-temporary.png')no-repeat left top;
     background-size: 22px auto;
     padding: 0 0 1px 26px;
     display: inline-block;
+    text-align: left;
+    min-width: 9em;
+    &:hover{
+       background: url('../images/icon-temporary.png')no-repeat left top;
+       background-size: 22px auto;   
+   }
+
+}
+.notemp{
+    background: url('../images/icon-temporary2.png')no-repeat left top;
+    background-size: 22px auto;
+    padding: 0 0 1px 26px;
+    display: inline-block;
+    text-align: left;
+    min-width: 9em;
 
 }
 .warning{
@@ -146,7 +171,7 @@
     text-align: left;
 }
 .table_list .wranbg{
-    background: #f8f7ef!important;
+    background: #fcefe8!important;
 }
 
 //searchbox
@@ -243,5 +268,10 @@
         height: auto;
         vertical-align: middle;
         margin: 0 2px;
+    }
+    @include screen('mobile') {
+        top:0px;
+        right:10px;
+        z-index:9;
     }
 }
