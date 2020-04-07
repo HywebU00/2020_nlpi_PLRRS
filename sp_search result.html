@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>公共出借權登記系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- slick css-->
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+<!-- animate css-->
+<link rel="stylesheet" href="css/animate.min.css">
+<!-- hyUI css -->
+<link rel="stylesheet" href="css/hyui.css">
+<!-- favicon -->
+<link href="images/favicon.png" rel="icon" type="image/x-icon">
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <!-- header、block1 background同張圖需套2個位置，圖檔名稱:背景1(mainbg.jpg)、背景2(mainbg2.jpg)，可供客戶自行上稿 -->
+        <header class="header"  style="background: #d9cfc6 url('images/mainbg.jpg');">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+
+                <div class="weltxt">歡迎，<a href="#">A123456789 劉阿淇</a><span><img src="images/icon-warning2.png" alt="尚未驗證身分通過"></span></div>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <!-- 一組ul預設靠右 -->
+                    <!-- 兩組ul已寫JQ靠左靠右 -->
+                    <ul>
+                        <li><a href="#">我的會員端</a></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </nav>
+                <!-- navigation End -->
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="公共出借權登記系統" /></a>
+                </h1>
+
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">最新訊息</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://www.google.com">實施計畫與期程</a></li>
+                        <li><a href="http://www.google.com">線上教學</a></li>
+                        <li><a href="#">宣傳資料</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="http://www.google.com">第二層有連結</a>
+                                    <ul>
+                                        <li><a href="http://www.google.com">第三層選單有下層</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://www.google.com">第三層選單有連結</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">常見問答</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">首頁</a></li>
+                        <li>書目查詢</li>
+                    </ul>
+                </div>
+                <!-- h2節點 -->
+                <h2 class="title">書目查詢</h2>
+
+                <section class="lp">
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="icon_back"><a href="#">回上一頁</a></li>
+                        </ul>
+                    </div>
+                    <!-- searchbox Start -->
+                    <section class="searchbox">
+                        <button type="button" name="收合" class="btn btn-toggle"></button>
+
+                        <div class="container">
+                            <form action="" class="sform">
+                                <div class="form_grp form_inline">
+                                    <label for="username">帳號</label>
+                                    <input name="username" type="text" class="textinput" placeholder="可輸入多組ISBN。多組ISBN使用，分隔">
+                                </div>
+                                <div class="form_grp form_inline">
+                                    <label for="username">書名</label>
+                                    <input name="username" type="text" class="textinput" placeholder="可輸入多組書名關鍵字。多組關鍵字使用，分隔">
+                                    <select name="" id="select1" class="sel">
+                                        <option value="">And</option>
+                                        <option value="">Or</option>
+                                        <option value="">Not</option>
+                                    </select>
+                                </div>
+                                <div class="form_grp form_inline">
+                                    <label for="username">作者</label>
+                                    <input name="username" type="text" class="textinput" placeholder="可輸入作者關鍵字。多組關鍵字使用，分隔">
+                                    <select name="" id="select2" class="sel">
+                                        <option value="">And</option>
+                                        <option value="">Or</option>
+                                        <option value="">Not</option>
+                                    </select>
+                                </div>
+                                <div class="form_grp form_inline">
+                                    <label for="username">出版社</label>
+                                    <input name="username" type="text" class="textinput" placeholder="可輸入出版社關鍵字。多組關鍵字使用，分隔">
+                                    <select name="" id="select3" class="sel">
+                                        <option value="">And</option>
+                                        <option value="">Or</option>
+                                        <option value="">Not</option>
+                                    </select>
+                                </div>
+                                <div class="btn_grp">
+                                    <input name="" type="submit" value="搜尋" />
+                                    <input name="" type="reset" value="重設" />
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <!-- searchbox End -->
+
+                    <!-- table_list star -->
+                    <form action="">
+                        <div class="table_list">
+                            <div class="aRight">
+                                <button type="button" class="btn">下載勾選書目</button>
+                                <button type="button" class="btn" id="openModal">勾選項目放入登記暫存</button>
+                            </div>
+                            <!--視窗-->
+                            <div id="modal1" class="modal">
+                                <h2>請先登入會員</h2>
+                                <p>欲暫存登記作品需先登入會員。<br>
+                                點選「確定」進行登入，點選「取消」放棄暫存、返回頁面</p>
+                                <div class="btn_grp">
+                                    <input name="" type="submit" value="確定" />
+                                    <input name="" type="reset" value="取消" />
+                                </div>
+                            </div>
+
+                            <div class="select-all"><input type="checkbox" value="">本頁全選</div>
+
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table summary="" class="wranbg">
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                            <div class="warning">此書目低於發放標準無法登記</div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                    <!-- table_list end -->
+
+                </section>
+                <!-- LP End -->
+                <!-- Pagination -->
+                <div class="pagination">
+                    <form action="" class="form_inline">
+                        <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                        </select> 筆， <input type="button" class="btn" value="確定">
+                    </div>
+                </form>
+                <ul class="page">
+                    <li class="first">
+                        <a href="#" title="第一頁">第一頁 </a></li>
+                        <li class="prev">
+                            <a href="#" title="回上一頁">回上一頁 </a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li class="next">
+                                <a href="#" title="下一頁">下一頁 </a>
+                            </li>
+                            <li class="last">
+                                <a href="#" title="最後一頁">最後一頁 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main end -->
+
+            <!-- footer Start-->
+            <footer>
+                <div class="container">
+                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                    <div class="footer_logo">
+                        <img src="images/f_logo.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="footer_info">
+                        <ul class="footer_link">
+                            <li><a href="javascript:;">隱私權政策</a></li>
+                            <li><a href="javascript:;">網站安全政策</a></li>
+                            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                        </ul>
+                        <p class="Copyright">國立公共資訊圖書館版權所有 © 2020 All Rights Reserved.<br>
+                        建議瀏覽器：IE11.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</p>
+                    </div>
+                    <div class="footer_icon">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="javascript:;" title="另開視窗">關於「公共出借權」計畫</a>   
+                            </li>
+                            <li>
+                                <a target="_blank" href="javascript:;" title="另開視窗">公共出借權登記系統操作線上教學</a>   
+                            </li>
+                            <li>
+                                <a target="_blank" href="javascript:;" title="另開視窗">意見回饋
+                                </a>   
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </footer>
+            <!-- footer End -->
+        </div>
+        <a href="javascript:;" class="scrollToTop">回頁首</a>
+        <!-- JQ -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- 外掛 plugin js -->
+        <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+        <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+        <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+            {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       false,       // default
+                      live:         true        // default
+                  }
+                  )
+            wow.init();
+        </script>
+        <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+        <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+        <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+
+        <!-- hyUI -->
+        <script src="js/hyui.js"></script>
+        <!-- 客製js -->
+        <script src="js/customize.js"></script>
+    </body>
+
+    </html>
