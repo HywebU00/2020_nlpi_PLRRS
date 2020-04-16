@@ -1,7 +1,8 @@
 .tabSet {
     max-width: 100%;
-    margin: 1em auto;
+    margin: .5em auto;
     overflow: hidden;
+    background: #fff;
     @extend %clearfix;
     @include screen('mobile') {
         width: auto;
@@ -83,6 +84,14 @@
         }
         a {
             @include aSetting_nocolor;
+            background: url('../images/tablibg.png')no-repeat .3em .6em;
+            background-size: 3px auto;
+            padding-left: 1em;
+            display: block;
+            color:#ed6658;
+            &:hover{
+                color:$aColor;
+            }
         }
         time {
             display: inline-block;

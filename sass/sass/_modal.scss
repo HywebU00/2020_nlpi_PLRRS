@@ -1,8 +1,8 @@
-.modal {
+.modal, .modal2, .modal3 {
     position: fixed;
     display: none;
     width: 600px;
-    min-height: 300px;
+    min-height: 200px;
     background: #FFF;
     z-index: 99999999;
     top: 5%;
@@ -14,11 +14,11 @@
     box-shadow:1px 1px 15px RGBA(0, 0, 0, .5);
     animation: scaleUp .5s ease-out;
     @include screen('mobile') {
-     width: 90%;
-     margin: 0 auto!important;
-     left: 5%;
- }
- h2 {
+       width: 90%;
+       margin: 0 auto!important;
+       left: 5%;
+   }
+   h2 {
         // border-bottom: 1px solid $primaryColor;
         padding-bottom: .5em;
         margin: 1em 0!important;

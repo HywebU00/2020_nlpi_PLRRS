@@ -130,10 +130,10 @@ $(function() {
 /////////////modal設定/////////////
 /*-----------------------------------*/
 $(function() {
-    $('#modal1').hide();                                                                //先隱藏視窗
-    $('.modal').after('<div class="modal_overlay"></div>');                             //新增透明底
-    $('.modal').prepend('<button type="button" class="close">關閉</button>');           //新增關閉按鈕
-    $('.modal_overlay').hide();                                                         //隱藏透明底
+    $('#modal1').hide();//先隱藏視窗
+    $('.modal').after('<div class="modal_overlay"></div>'); //新增透明底
+    $('.modal').prepend('<button type="button" class="close">關閉</button>');  //新增關閉按鈕
+    $('.modal_overlay').hide();  //隱藏透明底
     //按鈕動作
     $('#openModal').click(function(e) {
         $('.modal_overlay').fadeIn(100);
@@ -150,6 +150,54 @@ $(function() {
     //點選關閉按鈕及透明底都可關閉
     $('.modal_overlay').click(closeModal);
     $('.modal .close').click(closeModal);
+
+});
+
+$(function() {
+    $('#modal2').hide();//先隱藏視窗
+    $('.modal2').after('<div class="modal_overlay"></div>'); //新增透明底
+    $('.modal2').prepend('<button type="button" class="close">關閉</button>');  //新增關閉按鈕
+    $('.modal_overlay').hide();  //隱藏透明底
+    //按鈕動作
+    $('#openModal2').click(function(e) {
+        $('.modal_overlay').fadeIn(100);
+        $('.modal2').fadeIn(100);
+        $('body').addClass('noscroll');
+        e.preventDefault();
+    });
+    //關閉function
+    function closeModal(){
+        $('#modal2').hide();
+        $('.modal_overlay').hide();
+        $('body').removeClass('noscroll');
+    }
+    //點選關閉按鈕及透明底都可關閉
+    $('.modal_overlay').click(closeModal);
+    $('.modal2 .close').click(closeModal);
+
+});
+
+$(function() {
+    $('#modal3').hide();//先隱藏視窗
+    $('.modal3').after('<div class="modal_overlay"></div>'); //新增透明底
+    $('.modal3').prepend('<button type="button" class="close">關閉</button>');  //新增關閉按鈕
+    $('.modal_overlay').hide();  //隱藏透明底
+    //按鈕動作
+    $('#openModal3').click(function(e) {
+        $('.modal_overlay').fadeIn(100);
+        $('.modal3').fadeIn(100);
+        $('body').addClass('noscroll');
+        e.preventDefault();
+    });
+    //關閉function
+    function closeModal(){
+        $('#modal3').hide();
+        $('.modal_overlay').hide();
+        $('body').removeClass('noscroll');
+    }
+    //點選關閉按鈕及透明底都可關閉
+    $('.modal_overlay').click(closeModal);
+    $('.modal3 .close').click(closeModal);
 
 });
 
