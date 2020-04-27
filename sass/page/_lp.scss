@@ -1,6 +1,5 @@
 .lp {
     text-align: left;
-
     .function{
         margin: 0.5em 0 0.5em;
 
@@ -105,24 +104,43 @@
         }
     }
     @include screen('mobile') {
-       float: none; 
-       text-align: left;
-       margin: 1em 0;
+     float: none; 
+     text-align: left;
+     margin: 1em 0;
 
-   }
+ }
 
 }
 .select-all{
     margin: .5em 0;
 }
+.select-all2{
+    margin: .5em 0;
+    display: none;
+
+    @include screen('mobile') {
+        display: block;
+    }
+}
 .s-num{
     color: #fff;
-    background: #bdb7b2;
+    background: #887667;
     display: block;
     margin: 2px;
     padding: 3px .5em;
     font-weight: bold;
+    font-size: .938em;
 }
+.s-num2{
+    color: #fff;
+    background: #887667;
+    display: inline-block;
+    margin: 2px;
+    padding: 3px .5em;
+    font-weight: bold;
+    font-size: .938em;
+}
+
 .temporary{
     background: url('../images/icon-temporary2.png')no-repeat left top;
     background-size: 22px auto;
@@ -132,9 +150,9 @@
     min-width: 9em;
 
     &:hover{
-       background: url('../images/icon-temporary.png')no-repeat left top;
-       background-size: 22px auto;   
-   }
+     background: url('../images/icon-temporary.png')no-repeat left top;
+     background-size: 22px auto;   
+ }
 
 }
 .temporary2{
@@ -145,9 +163,9 @@
     text-align: left;
     min-width: 9em;
     &:hover{
-       background: url('../images/icon-temporary.png')no-repeat left top;
-       background-size: 22px auto;   
-   }
+     background: url('../images/icon-temporary.png')no-repeat left top;
+     background-size: 22px auto;   
+ }
 
 }
 .notemp{
@@ -157,6 +175,7 @@
     display: inline-block;
     text-align: left;
     min-width: 9em;
+    color:#888;
 
 }
 .warning{
@@ -177,7 +196,7 @@
 //searchbox
 .searchbox {
     @extend %clearfix;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     margin: 0 auto;
 
     .container {
@@ -194,7 +213,7 @@
         background: $aHover;
         position: absolute;
         left: 15px;
-        margin-top:-3em;
+        margin-top:-3px;
         z-index: 90;
 
         // text-indent: -9999px;
@@ -225,7 +244,7 @@
     }
     .sform{
         background: #f0ede5;
-        margin: 0;
+        margin: 2em 0 0 0;
         padding: 1.5em 0 1em;
 
         label{

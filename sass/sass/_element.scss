@@ -23,7 +23,7 @@ footer .accesskey {
     color: #5e544f!important;
 }
 .main #aC{
- top: 160px; 
+   top: 160px; 
 }
 
 // more按鈕
@@ -112,6 +112,10 @@ a.more {
     &:hover,&:focus{
         background: url(../images/gotop_ov.png) no-repeat center top rgba(0, 0, 0, 0);
         box-shadow:none;
+    }
+    @include screen('mobile') {
+        right: 0;
+        bottom: 50px; 
     }
 }
 

@@ -40,7 +40,6 @@
                     <!-- 一組ul預設靠右 -->
                     <!-- 兩組ul已寫JQ靠左靠右 -->
                     <ul>
-                        <li><a href="#">我的會員端</a></li>
                         <li><a href="#">登出</a></li>
                     </ul>
                 </nav>
@@ -55,7 +54,7 @@
                 <!-- menu Start -->
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">最新訊息</a>
+                        <li><a href="#">登記作品</a>
                             <ul>
                                 <li><a href="#">第二層選單</a></li>
                                 <li><a href="#">第二層選單</a></li>
@@ -63,28 +62,9 @@
                                 <li><a href="#">第二層選單</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://www.google.com">實施計畫與期程</a></li>
-                        <li><a href="http://www.google.com">線上教學</a></li>
-                        <li><a href="#">宣傳資料</a>
-                            <ul>
-                                <li><a href="#">第二層選單</a></li>
-                                <li><a href="#">第二層選單</a></li>
-                                <li><a href="http://www.google.com">第二層有連結</a>
-                                    <ul>
-                                        <li><a href="http://www.google.com">第三層選單有下層</a>
-                                            <ul>
-                                                <li><a href="#">第四層選單</a></li>
-                                                <li><a href="#">第四層選單</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="http://www.google.com">第三層選單有連結</a></li>
-                                        <li><a href="#">第三層選單</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">第二層選單</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">常見問答</a></li>
+                        <li><a href="#">暫存清單</a></li>
+                        <li><a href="#">已登記作品</a></li>
+                        <li><a href="#">代註冊帳號</a></li>
                     </ul>
                 </nav>
                 <!-- menu End -->
@@ -104,15 +84,14 @@
                 </div>
                 <!-- h2節點 -->
                 <h2 class="title">書目查詢</h2>
-                <!-- function功能區塊 -->
-                <div class="function">
-                    <ul>
-                        <li class="icon_back"><a href="#">回上一頁</a></li>
-                    </ul>
-                </div>
 
                 <section class="lp">
-
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="icon_back"><a href="#">回上一頁</a></li>
+                        </ul>
+                    </div>
                     <!-- searchbox Start -->
                     <section class="searchbox">
                         <button type="button" name="收合" class="btn btn-toggle"></button>
@@ -159,22 +138,6 @@
                     </section>
                     <!-- searchbox End -->
 
-                    <!-- Pagination -->
-                    <div class="pagination">
-                        <form action="" class="form_inline">
-                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 
-                                <select name="" id="">
-                                    <option value="">10</option>
-                                    <option value="">20</option>
-                                    <option value="">30</option>
-                                    <option value="">40</option>
-                                </select> 筆
-                            </div>
-                        </form>
-
-                    </div>
-                    <!-- Pagination end-->
-
                     <!-- table_list star -->
                     <form action="">
                         <div class="table_list">
@@ -220,9 +183,12 @@
                                             </a>
                                         </td>
                                     </tr>
-                                </tbody>
 
-                                <tbody class="wranbg">
+                                </tbody>
+                            </table>
+
+                            <table summary="" class="wranbg">
+                                <tbody>
                                     <tr>
                                         <td data-title="請勾選"><input type="checkbox" value="" disabled=”disabled”></td>
                                         <td data-title="資料內容" class="data">
@@ -246,7 +212,11 @@
                                             </div>
                                         </td>
                                     </tr>
+
                                 </tbody>
+                            </table>
+
+                            <table summary="">
 
                                 <tbody>
                                     <tr>
@@ -271,108 +241,107 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody>
 
-                                <tbody>
-                                    <tr>
-                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
-                                        <td data-title="資料內容" class="data">
-                                            <div class="isbn">ISBN：9789573311478</div>
-                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
-                                            <ul>
-                                                <li>作者：駱以軍</li>
-                                                <li>出版社：皇冠</li>
-                                                <li>出版年：1994</li>
-                                            </ul>
-                                        </td>
-                                        <td data-title="年度總借閱次數">
-                                            <div class="s-num">
-                                                <span>年度總借閱次數：</span>101 次
-                                            </div>
-                                        </td>
-                                        <td data-title="放入登記暫存" class="">
-                                            <a href="#" class="temporary">
-                                                放入登記暫存
-                                            </a>
-                                        </td>
-                                    </tr>
                                 </tbody>
-
-                                <tbody>
-                                    <tr>
-                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
-                                        <td data-title="資料內容" class="data">
-                                            <div class="isbn">ISBN：9789573311478</div>
-                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
-                                            <ul>
-                                                <li>作者：駱以軍</li>
-                                                <li>出版社：皇冠</li>
-                                                <li>出版年：1994</li>
-                                            </ul>
-                                        </td>
-                                        <td data-title="年度總借閱次數">
-                                            <div class="s-num">
-                                                <span>年度總借閱次數：</span>101 次
-                                            </div>
-                                        </td>
-                                        <td data-title="放入登記暫存" class="">
-                                            <a href="#" class="temporary">
-                                                放入登記暫存
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-
                             </table>
 
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table summary="">
+
+                                <tbody>
+                                    <tr>
+                                        <td data-title="請勾選"><input type="checkbox" value=""></td>
+                                        <td data-title="資料內容" class="data">
+                                            <div class="isbn">ISBN：9789573311478</div>
+                                            <div class="bookname"><a href="#">書名：和小星說童話</a></div>
+                                            <ul>
+                                                <li>作者：駱以軍</li>
+                                                <li>出版社：皇冠</li>
+                                                <li>出版年：1994</li>
+                                            </ul>
+                                        </td>
+                                        <td data-title="年度總借閱次數">
+                                            <div class="s-num">
+                                                <span>年度總借閱次數：</span>101 次
+                                            </div>
+                                        </td>
+                                        <td data-title="放入登記暫存" class="">
+                                            <a href="#" class="temporary">
+                                                放入登記暫存
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
                     </form>
                     <!-- table_list end -->
 
-                    <!-- Pagination -->
-                    <div class="pagination">
-                        <form action="" class="form_inline">
-                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
-                                <option value="">10</option>
-                                <option value="">20</option>
-                                <option value="">30</option>
-                                <option value="">40</option>
-                            </select> 筆
-                        </div>
-                    </form>
-                    <ul class="page">
-                        <li class="first">
-                            <a href="#" title="第一頁">第一頁 </a></li>
-                            <li class="prev">
-                                <a href="#" title="回上一頁">回上一頁 </a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                                <li><a href="#">7</a></li>
-                                <li><a href="#">8</a></li>
-                                <li><a href="#">9</a></li>
-                                <li><a href="#">10</a></li>
-                                <li class="next">
-                                    <a href="#" title="下一頁">下一頁 </a>
-                                </li>
-                                <li class="last">
-                                    <a href="#" title="最後一頁">最後一頁 </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Pagination end-->
-                        <!-- aRight star -->
-                        <div class="aRight2">
-                            <button type="button" class="btn" id="openModal">勾選項目放入登記暫存</button>
-                        </div>
-                        <!-- aRight end -->
-
-                    </section>
-                    <!-- LP End -->
-
+                </section>
+                <!-- LP End -->
+                <!-- Pagination -->
+                <div class="pagination">
+                    <form action="" class="form_inline">
+                        <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                        </select> 筆， <input type="button" class="btn" value="確定">
+                    </div>
+                </form>
+                <ul class="page">
+                    <li class="first">
+                        <a href="#" title="第一頁">第一頁 </a></li>
+                        <li class="prev">
+                            <a href="#" title="回上一頁">回上一頁 </a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li class="next">
+                                <a href="#" title="下一頁">下一頁 </a>
+                            </li>
+                            <li class="last">
+                                <a href="#" title="最後一頁">最後一頁 </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

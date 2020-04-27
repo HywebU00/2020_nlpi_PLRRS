@@ -13,7 +13,11 @@ div.function {
     @include box-sizing;
     @extend %clearfix;
     margin: -2.8em 0 .5em;
-    float: right;
+    // float: right;
+    position: absolute;
+    top:80px;
+    right:15px;
+    // z-index:3;
 
     ul {
         @include li-reset;

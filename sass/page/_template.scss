@@ -55,6 +55,7 @@ body {
     }
     >.container {
         @include gutter(); //gutter 代表左右要留白
+        padding-bottom: 1em;
     }
 
     h2{
@@ -68,6 +69,8 @@ body {
         text-shadow: 1px 1px 3px #fff;
         letter-spacing:0.05em;
         clear: both;
+        // z-index: 3;
+
         &:before {
             content: '';
             width: 2em;
