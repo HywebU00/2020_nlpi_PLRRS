@@ -60,13 +60,13 @@ table {
 
         .data{
             text-align: left;
-            background: url('../images/data_bg.png')no-repeat left center;
-            background-size: 50px auto;
-            padding-left: 80px!important;
-            line-height: 1.8em;
+            // background: url('../images/data_bg.png')no-repeat left center;
+            // background-size: 50px auto;
+            // padding-left: 80px!important;
+            line-height: 1.4em;
             @include screen('xs_mobile') {
-                background: none;
-                padding-left: 10px!important;
+                // background: none;
+                // padding-left: 10px!important;
             }
             ul{
                 list-style: none;
@@ -335,16 +335,22 @@ th, td{
 .aLeft{
     text-align: left;
 }
+.aCenter{
+    text-align: center;
+    @include screen('mobile') {
+        text-align: left;
+    }
+}
 
 .data{
     text-align: left;
-    background: url('../images/data_bg.png')no-repeat left center;
-    background-size: 50px auto;
-    padding-left: 80px!important;
-    line-height: 1.8em;
+    // background: url('../images/data_bg.png')no-repeat left center;
+    // background-size: 50px auto;
+    // padding-left: 80px!important;
+    line-height: 1.4em;
     @include screen('xs_mobile') {
-        background: none;
-        padding-left: 35%!important;
+        // background: none;
+        // padding-left: 35%!important;
     }
     ul{
         list-style: none;
@@ -377,22 +383,7 @@ th, td{
         }
     }
 }
-.btn5{
-    display: inline-block;
-    margin: 2px;
-    a{
-        padding: .4em .5em;
-        text-decoration: none;
-        background:#5b043f;
-        color:#fff!important;
-        font-weight: bold;
-        &:hover, &:focus{
-            background: lighten(#5b043f, 8);
-            border: none!important;
-        }       
-    }
 
-}
 
 }
 @include screen('xs_mobile') {
@@ -422,21 +413,21 @@ th, td{
             border: none !important;
             border-bottom: 1px solid #e1dccf !important;
             position: relative;
-            padding-left: 35% !important;
-            white-space: normal;
-            text-align: left;
+            // padding-left: 35% !important;
+            // white-space: normal;
+            // text-align: left;
             &:before {
-                content: attr(data-title);
-                position: absolute;
-                top: .5em;
-                left: .5em;
-                width: 30%;
-                padding-right: 10px;
+                // content: attr(data-title);
+                // position: absolute;
+                // top: .5em;
+                // left: .5em;
+                // width: 30%;
+                // padding-right: 10px;
                 // white-space: nowrap;
-                text-align: left;
-                font-weight: bold;
-                color: #000;
-                font-size: .938em;
+                // text-align: left;
+                // font-weight: bold;
+                // color: #000;
+                // font-size: .938em;
             }
         }
 

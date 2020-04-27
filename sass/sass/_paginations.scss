@@ -34,6 +34,7 @@
                 white-space: nowrap;
                 font-size: 1em;
                 color: $color-word;
+                text-align: center;
                 @include gradient (#F7F7F7, #EAEAEA, vertical);
                 border: #ccc solid 1px;
                 &:hover,

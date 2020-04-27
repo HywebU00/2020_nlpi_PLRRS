@@ -96,8 +96,8 @@
                     </div>
                     <div class="aRight4">
                         <button type="button" class="btn r-icon-del">整批移除</button>
-                        <button type="button" class="btn r-icon-up">批次上傳證明文件</button>
-                        <button type="button" class="btn r-icon-rev">批次登記送審</button>
+                        <button type="button" class="btn r-icon-up" id="openModal10">批次上傳證明文件</button>
+                        <button type="button" class="btn r-icon-rev" id="openModal3">批次登記送審</button>
                     </div>
 
                     <!-- Pagination -->
@@ -132,10 +132,11 @@
 
                             <table summary="">
                                 <tbody>
-                                   <thead>
+                                 <thead>
                                     <tr>
                                         <th><input type="checkbox" value=""></th>
                                         <th class="aLeft">本頁全選</th>
+                                        <th></th>
                                         <th>登記為出版社</th>
                                         <th>登記作者</th>
                                         <th>作者人數</th>
@@ -143,35 +144,40 @@
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <td data-title="本頁全選"><input type="checkbox" value="" checked>
+                                    <td class="aCenter"><input type="checkbox" value="" checked>
                                     </td>
-                                    <td data-title="資料內容" class="data">
+                                    <td>
+                                        <div class="btn5">
+                                            <a href="#">待上傳證明</a>
+                                        </div>                                           
+                                        <div class="s-num2">
+                                            101 次
+                                        </div>
+                                    </td>
+                                    <td class="data">
                                         <div class="isbn">
-                                            ISBN：9789573311478<a href="#" class="view" id="openModal2">檢視詳細</a></div>
+                                            ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
                                             <div class="bookname">書名：和小星說童話</div>
                                             <ul>
                                                 <li>作者：作者A, 作者B</li>
                                                 <li>出版社：凌網文化, 天下文化</li>
                                             </ul>
-                                            <div class="btn5">
-                                                <a href="#">待上傳證明</a>
-                                            </div>                                           
-                                            <div class="s-num2">
-                                                <span>年度總借閱次數：</span>101 次
-                                            </div>
+                                            <div class="tempdate">暫存日期時間：2020/1/31 16:33</div>
                                         </td>
-                                        <td>&nbsp;</td>
-                                        <td data-title="登記為出版社" class="numtd">
-
+                                        <td>
+                                            <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                            
                                         </td>
-                                        <td data-title="登記作者" class="">
-
+                                        <td>
+                                            <input type="text" id="" placeholder="作者A, 作者B" value="作者A, 作者B">
                                         </td>
-                                        <td data-title="作者人數" class="">
-
+                                        <td class="aCenter">
+                                            <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                         </td>
-                                        <td data-title="操作" class="">
-
+                                        <td class="m_icon">
+                                            <a href="#"><img src="images/m-icon04.png" alt="上傳檔案"></a>
+                                            <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
+                                            <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -228,125 +234,154 @@
                 </section>
                 <!-- LP End -->
                 <!--視窗-->
-                <div id="modal1" class="modal">
-                    <h2>放入暫存成功</h2>
-                    <p>已將勾選作品放入暫存，是否前往檢視？<br>
-                    點選「確定」檢視暫存清單、點選「取消」繼續挑選作品</p>
-                    <div class="btn_grp">
-                        <input name="" type="submit" value="確定" />
-                        <input name="" type="reset" value="取消" />
-                    </div>
-                </div>
-                <!--視窗2-->
-                <div id="modal2" class="modal2">
-                    <h2>登記書目詳細資訊</h2>
-                    <dl class="popupbox">
-                        <dt>題名</dt>
-                        <dd>
-                            <p>名偵探柯南</p>
-                        </dd>
-                        <dt>ISBN</dt>
-                        <dd>
-                            <div class="declare">
-                                <p>9575392581 (第1冊:平裝): 新臺幣75元</p>
-                                <p>9575392582 (第2冊:平裝): 新臺幣75元</p>
-                                <p>9575392583 (第3冊:平裝): 新臺幣75元</p>
-                                <p>9575392584 (第4冊:平裝): 新臺幣75元</p>
-                                <p>9575392585 (第5冊:平裝): 新臺幣75元</p>
-                                <p>9575392586 (第6冊:平裝): 新臺幣75元</p>
-                                <p>9575392587 (第7冊:平裝): 新臺幣75元</p>
-                                <p>9575392588 (第8冊:平裝): 新臺幣75元</p>
-                                <p>9575392589 (第9冊:平裝): 新臺幣75元</p>
-                                <p>9575392590 (第10冊:平裝): 新臺幣75元</p>
-                            </div>
-                        </dd>
-                    </dl>
-                </div>
-                <!--視窗3-->
-                <div id="modal3" class="modal3">
-                    <h2>聯絡管理者</h2>
-                    <form action="" class="form_grid">
-                        <div class="form_grp">
-                            <label for="username" class="form_title">From</label>
-                            <div class="form_content">
-                                <p class="t2">A123456789, 劉阿淇</p>
-                            </div>
+                <div id="modal10" class="modal10">
+                    <h2>批次上傳證明文件</h2>
+                    <!-- batch star -->
+                    <div class="batch2">
+                        <!-- upfile star -->
+                        <div class="upfile">
+                            <div class="up_icon"><a href="#" id="openModal11"><img src="images/up_icon01.png" alt="檔案上傳"></a></div>
+                            <p>可拖拉或選擇複數檔案上傳，為能正確對應回欲登記的作品，請注意檔名命名規則，若檔名命名無法正確對應到相關作品書目，該檔案將不會上傳</p>
                         </div>
-                        <div class="form_grp">
-                            <label for="password" class="form_title">書目</label>
-                            <div class="form_content">
-                                <p>ISBN 9789573311478</p>
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="email" class="form_title">聯絡email</label>
-                            <div class="form_content">
-                                <input name="email" type="text" value="liucc@hyweb.com.tw">
-                            </div>
-                        </div>
-                        <div class="form_grp">
-                            <label for="address" class="form_title">內容</label>
-                            <div class="form_content">
-                                <textarea name="" id="address" cols="30" rows="10">請留下針對這本書目的疑問或訊息</textarea>
-                            </div>
-                        </div>
-                        <div class="btn_grp">
-                            <button class="btn btn-submit">送出</button>
-                        </div>
-                    </form>
-                </div>
-
-
-            </div>
-
-            <!-- main end -->
-
-            <!-- footer Start-->
-            <footer>
-                <div class="container">
-                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-                    <div class="footer_logo">
-                        <img src="images/f_logo.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="footer_info">
-                        <ul class="footer_link">
-                            <li><a href="javascript:;">隱私權政策</a></li>
-                            <li><a href="javascript:;">網站安全政策</a></li>
-                            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                        <ul>
+                            <li>請下載「<a href="#">作者委託具結文件</a>」後、簽章後掃描為PDF檔，並命名為「A+作者身分證字號」或「P+統一編號」，例如：AA123456789.pdf 或 P123456789.pdf（作者本人帳號免傳）</li>
+                            <li>每本登記作品請掃描或翻拍版權頁，若有多頁請合併為一個PDF檔，並命名為「ISBN 13碼」，例如：9789573311478.pdf。參考<a href="#">多頁整併為PDF方法</a></li>
                         </ul>
-                        <p class="Copyright">國立公共資訊圖書館版權所有 © 2020 All Rights Reserved.<br>
-                        建議瀏覽器：IE11.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</p>
+                        <!-- <div class="btn_grp"><a href="#" class="btn3">確定上傳</a></div> -->
+                        <!-- upfile end -->
                     </div>
-                    <div class="footer_icon">
+                    <!-- batch end -->
+
+                </div>
+                <!--視窗-->
+                <div id="modal11" class="modal11">
+                    <h2>批次上傳證明文件</h2>
+                    <h3>共選擇 3 個檔案上傳</h3>
+                    <!-- upload3 star -->
+                    <div class="upload3">
                         <ul>
                             <li>
-                                <a target="_blank" href="javascript:;" title="另開視窗">關於「公共出借權」計畫</a>   
+                                <span class="pdf">A123456789.pdf</span>
+                                <span class="kb">503KB</span>
+                                <span class="line"></span>
+                                <span class="icon-x"><a href="#"><img src="images/m-icon02.png" alt="刪除"></a></span>
                             </li>
                             <li>
-                                <a target="_blank" href="javascript:;" title="另開視窗">公共出借權登記系統操作線上教學</a>   
-                            </li>
-                            <li>
-                                <a target="_blank" href="javascript:;" title="另開視窗">意見回饋
-                                </a>   
-                            </li>
-                        </ul>
+                                <span class="pdf">0123456789123.pdf</span>
+                                <span class="kb">211KB</span>
+                                <span class="line">
+                                    <div class="linebar">
+                                     <div class="bar" style="width:50%;"></div>
+                                 </div>
+                             </span>
+                             <span class="icon-x"><a href="#"><img src="images/m-icon05.png" alt="刪除"></a></span>
+                         </li>
+                         <li>
+                            <span class="pdf">9789573311478.pdf</span>
+                            <span class="kb">1.2MB</span>
+                            <span class="line">
+                                <div class="linebar">
+                                    <div class="bar" style="width:20%;"></div>
+                                </div>
+                            </span>
+                            <span class="icon-x"><a href="#"><img src="images/m-icon05.png" alt="刪除"></a></span>
+                        </li>
+                    </ul>
+                    <div class="btn_grp"><a href="#" class="btn3">確定上傳</a></div>
 
-                    </div>
                 </div>
-            </footer>
-            <!-- footer End -->
+
+
+                <!-- upload3 end -->
+
+            </div>
+            <!--視窗4-->
+            <div id="modal4" class="modal4">
+                <h2>登記書目詳細資訊</h2>
+                <dl class="popupbox">
+                    <dt>題名</dt>
+                    <dd>
+                        <p>名偵探柯南</p>
+                    </dd>
+                    <dt>ISBN</dt>
+                    <dd>
+                        <div class="declare">
+                            <p>9575392581 (第1冊:平裝): 新臺幣75元</p>
+                            <p>9575392582 (第2冊:平裝): 新臺幣75元</p>
+                            <p>9575392583 (第3冊:平裝): 新臺幣75元</p>
+                            <p>9575392584 (第4冊:平裝): 新臺幣75元</p>
+                            <p>9575392585 (第5冊:平裝): 新臺幣75元</p>
+                            <p>9575392586 (第6冊:平裝): 新臺幣75元</p>
+                            <p>9575392587 (第7冊:平裝): 新臺幣75元</p>
+                            <p>9575392588 (第8冊:平裝): 新臺幣75元</p>
+                            <p>9575392589 (第9冊:平裝): 新臺幣75元</p>
+                            <p>9575392590 (第10冊:平裝): 新臺幣75元</p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--視窗3-->
+            <div id="modal3" class="modal3">
+                <h2>確認登記並送出審核？</h2>
+                <p>送審後將無法再編修與重複送審，確定送出？<br>
+                點選「確定」送出審核、點選「取消」繼續編修</p>
+                <div class="btn_grp">
+                    <input name="" type="submit" value="確定" />
+                    <input name="" type="reset" value="取消" />
+                </div>
+            </div>
+
+
         </div>
-        <a href="javascript:;" class="scrollToTop">回頁首</a>
-        <!-- JQ -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <!-- 外掛 plugin js -->
-        <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-        <script src="vendor/slick/slick.min.js "></script><!-- slick -->
-        <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
-        <script src="js/wow.min.js"></script>
-        <script>
-            wow = new WOW(
-            {
+
+        <!-- main end -->
+
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_logo">
+                    <img src="images/f_logo.png" alt="" class="img-responsive">
+                </div>
+                <div class="footer_info">
+                    <ul class="footer_link">
+                        <li><a href="javascript:;">隱私權政策</a></li>
+                        <li><a href="javascript:;">網站安全政策</a></li>
+                        <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                    </ul>
+                    <p class="Copyright">國立公共資訊圖書館版權所有 © 2020 All Rights Reserved.<br>
+                    建議瀏覽器：IE11.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</p>
+                </div>
+                <div class="footer_icon">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="javascript:;" title="另開視窗">關於「公共出借權」計畫</a>   
+                        </li>
+                        <li>
+                            <a target="_blank" href="javascript:;" title="另開視窗">公共出借權登記系統操作線上教學</a>   
+                        </li>
+                        <li>
+                            <a target="_blank" href="javascript:;" title="另開視窗">意見回饋
+                            </a>   
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+        {
                       boxClass:     'wow',      // default
                       animateClass: 'animated', // default
                       offset:       0,          // default
@@ -354,16 +389,16 @@
                       live:         true        // default
                   }
                   )
-            wow.init();
-        </script>
-        <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
-        <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
-        <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+        wow.init();
+    </script>
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
 
-        <!-- hyUI -->
-        <script src="js/hyui.js"></script>
-        <!-- 客製js -->
-        <script src="js/customize.js"></script>
-    </body>
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
 
-    </html>
+</html>

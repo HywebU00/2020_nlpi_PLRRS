@@ -104,11 +104,11 @@
         }
     }
     @include screen('mobile') {
-     float: none; 
-     text-align: left;
-     margin: 1em 0;
+       float: none; 
+       text-align: left;
+       margin: 1em 0;
 
- }
+   }
 
 }
 .select-all{
@@ -134,11 +134,38 @@
 .s-num2{
     color: #fff;
     background: #887667;
-    display: inline-block;
-    margin: 2px;
+    display: block;
+    margin: 2px 1px;
     padding: 3px .5em;
     font-weight: bold;
     font-size: .938em;
+    text-align: center;
+
+    @include screen('mobile') {
+       display: inline-block;
+
+   }
+}
+.btn5{
+    display: block;
+    margin: 2px 1px;
+    text-align: center;
+    a{
+        padding: 4px .5em;
+        text-decoration: none;
+        background:#5b043f;
+        color:#fff!important;
+        font-weight: bold;
+        display: block;
+        &:hover, &:focus{
+            background: lighten(#5b043f, 8);
+            border: none!important;
+        }       
+    }
+    @include screen('mobile') {
+       display: inline-block;
+
+   }
 }
 
 .temporary{
@@ -150,9 +177,9 @@
     min-width: 9em;
 
     &:hover{
-     background: url('../images/icon-temporary.png')no-repeat left top;
-     background-size: 22px auto;   
- }
+       background: url('../images/icon-temporary.png')no-repeat left top;
+       background-size: 22px auto;   
+   }
 
 }
 .temporary2{
@@ -163,9 +190,9 @@
     text-align: left;
     min-width: 9em;
     &:hover{
-     background: url('../images/icon-temporary.png')no-repeat left top;
-     background-size: 22px auto;   
- }
+       background: url('../images/icon-temporary.png')no-repeat left top;
+       background-size: 22px auto;   
+   }
 
 }
 .notemp{
