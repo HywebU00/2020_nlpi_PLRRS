@@ -1,4 +1,4 @@
-.modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9, .modal10, .modal11 {
+.modal, .modal2, .modal3, .modal4, .modal5, .modal5-1, .modal5-2, .modal6, .modal6-1, .modal7, .modal8, .modal9, .modal10, .modal11 {
     position: fixed;
     display: none;
     width: 600px;
@@ -14,11 +14,11 @@
     box-shadow:1px 1px 15px RGBA(0, 0, 0, .5);
     animation: scaleUp .5s ease-out;
     @include screen('mobile') {
-     width: 90%;
-     margin: 0 auto!important;
-     left: 5%;
- }
- h2 {
+       width: 90%;
+       margin: 0 auto!important;
+       left: 5%;
+   }
+   h2 {
         // border-bottom: 1px solid $primaryColor;
         padding-bottom: .5em;
         margin: 1em 0!important;
