@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>公共出借權登記系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- slick css-->
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+<!-- animate css-->
+<link rel="stylesheet" href="css/animate.min.css">
+<!-- hyUI css -->
+<link rel="stylesheet" href="css/hyui.css">
+<!-- favicon -->
+<link href="images/favicon.png" rel="icon" type="image/x-icon">
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <!-- header、block1 background同張圖需套2個位置，圖檔名稱:背景1(mainbg.jpg)、背景2(mainbg2.jpg)，可供客戶自行上稿 -->
+        <header class="header"  style="background: #d9cfc6 url('images/mainbg.jpg');">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+
+                <div class="weltxt">歡迎，<a href="#">A123456789 劉阿淇</a><span><img src="images/icon-warning2.png" alt="尚未驗證身分通過"></span></div>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <!-- 一組ul預設靠右 -->
+                    <!-- 兩組ul已寫JQ靠左靠右 -->
+                    <ul>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </nav>
+                <!-- navigation End -->
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="公共出借權登記系統" /></a>
+                </h1>
+
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">登記作品</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">暫存清單</a></li>
+                        <li><a href="#">已登記作品</a></li>
+                        <li><a href="#">代註冊帳號</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- lp star -->
+            <section class="lp temp">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">會員端首頁</a></li>
+                            <li>已登記作品</li>
+                        </ul>
+                    </div>
+                    <!-- h2節點 -->
+                    <h2 class="title">已登記作品</h2>
+                    <div class="aRight4">
+                        <button type="button" class="btn r-icon-down" id="openModal7">產出登記作品清單</button>
+                    </div>
+
+                    <!-- fun01 star -->
+                    <div class="fun01">
+                        <!-- ear_qs -->
+                        <div class="items year_qs">
+                            <button class="collapsible">年度快速篩選：</button>
+                            <div class="content">
+                                <ul>
+                                    <li><a href="#">2020<span class="num">(7)</span></a></li>
+                                    <li><a href="#">2021<span class="num">(0)</span></a></li>
+                                    <li><a href="#">2022<span class="num">(0)</span></a></li>
+                                    <li><a href="#">2023<span class="num">(0)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- status_qs -->
+                        <div class="items status_qs">
+                            <button class="collapsible">狀態快速篩選：</button>
+                            <div class="content">
+                                <ul>
+                                    <li><a href="#">全部<span class="num">(7)</span></a></li>
+                                    <li><a href="#">待審核<span class="num">(2)</span></a></li>
+                                    <li><a href="#">審核通過<span class="num">(5)</span></a></li>
+                                    <li><a href="#">審核不通過<span class="num">(20)</span></a></li>
+                                    <li><a href="#">重新審核<span class="num">(2)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- isbn_qs -->
+                        <div class="items isbn_qs">
+                            <form action="">
+                                <input name="username" type="text" placeholder="請輸入ISBN快速篩選" value="請輸入ISBN快速篩選" class="txtinput">
+                                <input name="" type="submit" value="確定" class="btn" />
+                            </form>
+                        </div>
+                    </div>
+                    <!-- fun01 end -->
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <form action="" class="form_inline">
+                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 
+                                <select name="" id="">
+                                    <option value="">10</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">40</option>
+                                </select> 筆
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- Pagination end-->
+
+                    <!-- table_list star -->
+                    <form action="">
+                        <div class="table_list2">
+                            <div class="select-all2"><input type="checkbox" value="">本頁全選</div>
+
+                            <table summary="">
+                               <thead>
+                                <tr>
+                                    <th>年度總借閱次數</th>
+                                    <th>書目資訊</th>
+                                    <th>登記出版社</th>
+                                    <th>登記作者</th>
+                                    <th>作者人數</th>
+                                    <th>審核狀態</th>
+                                    <th>補償金結算資訊</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>                                         
+                                        <div class="s-num2">
+                                            101 次
+                                        </div>
+                                    </td>
+                                    <td class="data">
+                                        <div class="isbn">
+                                            ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
+                                            <div class="bookname">書名：和小星說童話</div>
+                                            <div class="tempdate">送審日期時間：2020/1/31 16:33</div>
+                                        </td>
+                                        <td>
+                                            <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="作者A, 作者B" value="作者A, 作者B">
+                                        </td>
+                                        <td class="aCenter">
+                                            <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
+                                        </td>
+                                        <td class="aCenter"><span class="check">待審核</span></td>
+                                        <td class="aCenter"><span class="billinfo">-</span> / <span class="billinfo">-</span></td>
+                                        <td class="m_icon">
+                                            <a href="member5.html"><img src="images/m-icon03.png" alt="已登記作品"></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>                                         
+                                            <div class="s-num2">
+                                                1012 次
+                                            </div>
+                                        </td>
+                                        <td class="data">
+                                            <div class="isbn">
+                                                ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
+                                                <div class="bookname">書名：作品書名作品書名書名書名書名</div>
+                                                <div class="tempdate">送審日期時間：2020/1/31 16:33</div>
+                                            </td>
+                                            <td>
+                                                <div class="switch2"><span class="on">ON</span><span class="off">OFF</span></div>
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="凌網文化, 劉阿奇" value="凌網文化, 劉阿奇">
+                                            </td>
+                                            <td class="aCenter">
+                                                <input type="text" id="" placeholder="3" value="3" style="width: 2em;">
+                                            </td>
+                                            <td class="aCenter"><span class="check-ok">審核通過</span></td>
+                                            <td class="aCenter"><span class="billinfo">待結算</span> / <span class="billinfo">-</span></td>
+                                            <td class="m_icon">
+                                                <a href="member5.html"><img src="images/m-icon03.png" alt="已登記作品"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>                                         
+                                                <div class="s-num2">
+                                                    131 次
+                                                </div>
+                                            </td>
+                                            <td class="data">
+                                                <div class="isbn">
+                                                    ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
+                                                    <div class="bookname">書名：和小星說童話</div>
+                                                    <div class="tempdate">送審日期時間：2020/1/31 16:33</div>
+                                                </td>
+                                                <td>
+                                                    <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                                </td>
+                                                <td>
+                                                    <input type="text" placeholder="作者A, 作者B" value="作者A, 作者B">
+                                                </td>
+                                                <td class="aCenter">
+                                                    <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
+                                                </td>
+                                                <td class="aCenter"><span class="check-no">審核不通過</span></td>
+                                                <td class="aCenter"><span class="billinfo">-</span> / <span class="billinfo">-</span></td>
+                                                <td class="m_icon">
+                                                    <a href="member5.html"><img src="images/m-icon03.png" alt="已登記作品"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>                                         
+                                                    <div class="s-num2">
+                                                        101 次
+                                                    </div>
+                                                </td>
+                                                <td class="data">
+                                                    <div class="isbn">
+                                                        ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
+                                                        <div class="bookname">書名：和小星說童話和小星說童話</div>
+                                                        <div class="tempdate">送審日期時間：2020/1/31 16:33</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" placeholder="作者A, 作者B" value="作者A, 作者B">
+                                                    </td>
+                                                    <td class="aCenter">
+                                                        <input type="text" id="" placeholder="5" value="5" style="width: 2em;">
+                                                    </td>
+                                                    <td class="aCenter"><span class="check-ok">審核通過</span></td>
+                                                    <td class="aCenter"><span class="billinfo bill-ok">已發放</span> / <span class="billinfo bill-ok">106ntd</span></td>
+                                                    <td class="m_icon">
+                                                        <a href="member5.html"><img src="images/m-icon03.png" alt="已登記作品"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>                                         
+                                                        <div class="s-num2">
+                                                            101 次
+                                                        </div>
+                                                    </td>
+                                                    <td class="data">
+                                                        <div class="isbn">
+                                                            ISBN：<span>9789573311478</span><a href="#" class="view" id="openModal4">檢視詳細</a></div>
+                                                            <div class="bookname">書名：和小星說童話</div>
+                                                            <div class="tempdate">送審日期時間：2020/1/31 16:33</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" placeholder="作者A, 作者B" value="作者A, 作者B">
+                                                        </td>
+                                                        <td class="aCenter">
+                                                            <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
+                                                        </td>
+                                                        <td class="aCenter"><span class="check-no">重新審核</span></td>
+                                                        <td class="aCenter"><span class="billinfo">-</span> / <span class="billinfo">-</span></td>
+                                                        <td class="m_icon">
+                                                            <a href="member5.html"><img src="images/m-icon03.png" alt="已登記作品"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+
+                                            </table>
+                                        </div>
+                                    </form>
+                                    <!-- table_list end -->
+
+                                    <!-- Pagination -->
+                                    <div class="pagination">
+                                        <form action="" class="form_inline">
+                                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
+                                                <option value="">10</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">40</option>
+                                            </select> 筆
+                                        </div>
+                                    </form>
+                                    <ul class="page">
+                                        <li class="first">
+                                            <a href="#" title="第一頁">第一頁 </a></li>
+                                            <li class="prev">
+                                                <a href="#" title="回上一頁">回上一頁 </a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">7</a></li>
+                                                <li><a href="#">8</a></li>
+                                                <li><a href="#">9</a></li>
+                                                <li><a href="#">10</a></li>
+                                                <li class="next">
+                                                    <a href="#" title="下一頁">下一頁 </a>
+                                                </li>
+                                                <li class="last">
+                                                    <a href="#" title="最後一頁">最後一頁 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Pagination end-->
+
+                                    </div>
+                                </section>
+                                <!-- LP End -->
+                                <!--視窗-->
+                                <div id="modal7" class="modal7">
+                                    <h2>確認匯出登記清單？</h2>
+
+                                    <!--最外層的form 或 radio_grp class加上form_inline-->
+                                    <div class="radio_grp form_inline">
+                                        <label for="" class="form_title">匯出格式</label>
+                                        <input name="radioSample" type="radio" value="">單份完整清單
+                                        <input name="radioSample" type="radio" value="">依作者分別匯出清單
+                                    </div>
+                                    <p>選擇依作者產出的作品清單、將為一作者一份清單。僅供留存紀錄。點選「確定」產生清單、點選「取消」放棄</p>
+                                    <div class="btn_grp">
+                                        <input name="" type="submit" value="確定" />
+                                        <input name="" type="reset" value="取消" />
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- main end -->
+
+                            <!-- footer Start-->
+                            <footer>
+                                <div class="container">
+                                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                                    <div class="footer_logo">
+                                        <img src="images/f_logo.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="footer_info">
+                                        <ul class="footer_link">
+                                            <li><a href="javascript:;">隱私權政策</a></li>
+                                            <li><a href="javascript:;">網站安全政策</a></li>
+                                            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                                        </ul>
+                                        <p class="Copyright">國立公共資訊圖書館版權所有 © 2020 All Rights Reserved.<br>
+                                        建議瀏覽器：IE11.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</p>
+                                    </div>
+                                    <div class="footer_icon">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="javascript:;" title="另開視窗">關於「公共出借權」計畫</a>   
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="javascript:;" title="另開視窗">公共出借權登記系統操作線上教學</a>   
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="javascript:;" title="另開視窗">意見回饋
+                                                </a>   
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </footer>
+                            <!-- footer End -->
+                        </div>
+                        <a href="javascript:;" class="scrollToTop">回頁首</a>
+                        <!-- JQ -->
+                        <script src="js/jquery-3.3.1.min.js"></script>
+                        <!-- 外掛 plugin js -->
+                        <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+                        <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+                        <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+                        <script src="js/wow.min.js"></script>
+                        <script>
+                            wow = new WOW(
+                            {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       false,       // default
+                      live:         true        // default
+                  }
+                  )
+                            wow.init();
+                        </script>
+                        <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+                        <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+                        <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+
+                        <!-- hyUI -->
+                        <script src="js/hyui.js"></script>
+                        <!-- 客製js -->
+                        <script src="js/customize.js"></script>
+
+                    </body>
+
+                    </html>

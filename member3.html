@@ -100,6 +100,28 @@
                         <button type="button" class="btn r-icon-rev" id="openModal3">批次登記送審</button>
                     </div>
 
+                    <!-- fun01 star -->
+                    <div class="fun01">
+                        <!-- status_qs -->
+                        <div class="items status_qs">
+                            <button class="collapsible">狀態快速篩選：</button>
+                            <div class="content">
+                                <ul>
+                                    <li><a href="#">全部<span class="num">(7)</span></a></li>
+                                    <li><a href="#">待上傳證明<span class="num">(2)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- isbn_qs -->
+                        <div class="items isbn_qs">
+                            <form action="">
+                                <input name="username" type="text" placeholder="請輸入ISBN快速篩選" value="請輸入ISBN快速篩選" class="txtinput">
+                                <input name="" type="submit" value="確定" class="btn" />
+                            </form>
+                        </div>
+                    </div>
+                    <!-- fun01 end -->
+
                     <!-- Pagination -->
                     <div class="pagination">
                         <form action="" class="form_inline">
@@ -119,19 +141,10 @@
                     <!-- table_list star -->
                     <form action="">
                         <div class="table_list2">
-                            <!-- category2 -->
-                            <div class="category2">
-                                <span class="title1">狀態快速篩選：</span>
-                                <ul>
-                                    <li><a href="#" class="active">全部(7)</a></li>
-                                    <li><a href="#">待上傳證明(2)</a></li>
-                                </ul>
-                            </div>
-
                             <div class="select-all2"><input type="checkbox" value="">本頁全選</div>
 
                             <table summary="">
-                               <thead>
+                             <thead>
                                 <tr>
                                     <th><input type="checkbox" value=""></th>
                                     <th class="aLeft">本頁全選</th>
@@ -144,7 +157,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="aCenter"><input type="checkbox" value="" checked>
+                                    <td class="aCenter"><input type="checkbox" value="">
                                     </td>
                                     <td>
                                         <div class="btn5">
@@ -166,7 +179,7 @@
                                         </td>
                                         <td>
                                             <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
-                                            
+
                                         </td>
                                         <td>
                                             <input type="text" id="openModal5" placeholder="作者A, 作者B" value="作者A, 作者B">
@@ -175,15 +188,16 @@
                                             <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                         </td>
                                         <td class="m_icon">
-                                            <a href="#" id="openModal6"><img src="images/m-icon04.png" alt="上傳檔案"></a>
-                                            <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
-                                            <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
+                                            <a href="#"><img src="images/m-icon04.png" alt="上傳證明文件"></a>
+                                            <a href="#"><img src="images/m-icon02.png" alt="從暫存中移除"></a>
+                                            <a href="#"><img src="images/m-icon03.png" alt="管理已上傳證明文件"></a>
+                                            <a href="#" id="openModal6"><img src="images/m-icon06.png" alt="已對應上傳部份證明文件"></a>
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody>
                                     <tr>
-                                        <td class="aCenter"><input type="checkbox" value="" checked>
+                                        <td class="aCenter"><input type="checkbox" value="">
                                         </td>
                                         <td>
                                             <div class="btn5">
@@ -214,9 +228,10 @@
                                                 <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                             </td>
                                             <td class="m_icon">
-                                                <a href="#" id="openModal6"><img src="images/m-icon04.png" alt="上傳檔案"></a>
-                                                <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
-                                                <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
+                                                <a href="#"><img src="images/m-icon04.png" alt="上傳證明文件"></a>
+                                                <a href="#"><img src="images/m-icon02.png" alt="從暫存中移除"></a>
+                                                <a href="#"><img src="images/m-icon03.png" alt="管理已上傳證明文件"></a>
+                                                <a href="#" id="openModal6"><img src="images/m-icon06.png" alt="已對應上傳部份證明文件"></a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -225,8 +240,8 @@
                                             <td class="aCenter"><input type="checkbox" value="" checked>
                                             </td>
                                             <td>
-                                                <div class="btn5">
-                                                    <a href="#">待上傳證明</a>
+                                                <div class="btn5-ok">
+                                                    已上傳證明
                                                 </div>                                           
                                                 <div class="s-num2">
                                                     101 次
@@ -243,7 +258,7 @@
                                                     <div class="tempdate">暫存日期時間：2020/1/31 16:33</div>
                                                 </td>
                                                 <td>
-                                                    <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                                    <div class="switch2"><span class="on">ON</span><span class="off">OFF</span></div>
 
                                                 </td>
                                                 <td>
@@ -253,9 +268,9 @@
                                                     <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                                 </td>
                                                 <td class="m_icon">
-                                                    <a href="#" id="openModal6"><img src="images/m-icon04.png" alt="上傳檔案"></a>
-                                                    <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
-                                                    <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
+                                                    <a href="#"><img src="images/m-icon04.png" alt="上傳證明文件"></a>
+                                                    <a href="#"><img src="images/m-icon02.png" alt="從暫存中移除"></a>
+                                                    <a href="#"><img src="images/m-icon03.png" alt="管理已上傳證明文件"></a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -283,7 +298,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
-                                                        
+
                                                     </td>
                                                     <td>
                                                         <input type="text" id="openModal5" placeholder="作者A, 作者B" value="作者A, 作者B">
@@ -292,9 +307,9 @@
                                                         <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                                     </td>
                                                     <td class="m_icon">
-                                                        <a href="#" id="openModal6"><img src="images/m-icon04.png" alt="上傳檔案"></a>
-                                                        <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
-                                                        <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
+                                                        <a href="#"><img src="images/m-icon04.png" alt="上傳證明文件"></a>
+                                                        <a href="#"><img src="images/m-icon02.png" alt="從暫存中移除"></a>
+                                                        <a href="#"><img src="images/m-icon03.png" alt="管理已上傳證明文件"></a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -322,7 +337,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
-                                                            
+
                                                         </td>
                                                         <td>
                                                             <input type="text" id="openModal5" placeholder="作者A, 作者B" value="作者A, 作者B">
@@ -331,9 +346,9 @@
                                                             <input type="text" id="" placeholder="1" value="1" style="width: 2em;">
                                                         </td>
                                                         <td class="m_icon">
-                                                            <a href="#" id="openModal6"><img src="images/m-icon04.png" alt="上傳檔案"></a>
-                                                            <a href="#"><img src="images/m-icon02.png" alt="刪除"></a>
-                                                            <a href="#"><img src="images/m-icon03.png" alt="編輯"></a>
+                                                            <a href="#"><img src="images/m-icon04.png" alt="上傳證明文件"></a>
+                                                            <a href="#"><img src="images/m-icon02.png" alt="從暫存中移除"></a>
+                                                            <a href="#"><img src="images/m-icon03.png" alt="管理已上傳證明文件"></a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -424,12 +439,12 @@
                                                 <span class="kb">211KB</span>
                                                 <span class="line">
                                                     <div class="linebar">
-                                                       <div class="bar" style="width:50%;"></div>
-                                                   </div>
-                                               </span>
-                                               <span class="icon-x"><a href="#"><img src="images/m-icon05.png" alt="刪除"></a></span>
-                                           </li>
-                                           <li>
+                                                     <div class="bar" style="width:50%;"></div>
+                                                 </div>
+                                             </span>
+                                             <span class="icon-x"><a href="#"><img src="images/m-icon05.png" alt="刪除"></a></span>
+                                         </li>
+                                         <li>
                                             <span class="pdf">9789573311478.pdf</span>
                                             <span class="kb">1.2MB</span>
                                             <span class="line">
@@ -505,11 +520,11 @@
 
                                                 <div class="">
                                                     <textarea rows="5">
-A*****6789, 劉阿淇
-B*****6789, 林小明
-C*****6789, 劉二淇(帳號審核中) 
-C*****6789, 劉三淇(審核不通過) 
-16541333, 凌網編輯小組
+                                                        A*****6789, 劉阿淇
+                                                        B*****6789, 林小明
+                                                        C*****6789, 劉二淇(帳號審核中) 
+                                                        C*****6789, 劉三淇(審核不通過) 
+                                                        16541333, 凌網編輯小組
                                                     </textarea>
                                                     <div class="f-box">
                                                         <span class="items1">請按住Ctrl鍵同時選擇多名作者</span>
@@ -550,9 +565,9 @@ C*****6789, 劉三淇(審核不通過)
 
                                                     <div class="">
                                                         <textarea rows="5">
-N16541333001, 無委託作者 (無法聯繫)
-N16541333002, 網凌編輯小組 (已解散)
-N16541333003, 新增之委託作者 (手打備註)
+                                                            N16541333001, 無委託作者 (無法聯繫)
+                                                            N16541333002, 網凌編輯小組 (已解散)
+                                                            N16541333003, 新增之委託作者 (手打備註)
                                                         </textarea>
                                                         <div class="f-box">
                                                             <span class="items1">請按住Ctrl鍵同時選擇多名作者</span>
@@ -714,6 +729,7 @@ N16541333003, 新增之委託作者 (手打備註)
                             <script src="js/hyui.js"></script>
                             <!-- 客製js -->
                             <script src="js/customize.js"></script>
+
                         </body>
 
                         </html>

@@ -1217,9 +1217,9 @@
 	margin: 0 0 .5em;
 	.btn{
 		display: inline-block;
-		padding: .3em .8em;
+		padding: 6px 15px;
 		text-decoration: none;
-		background:#5b043f;
+		background:#887667;
 		color:#fff;
 		font-weight: bold;
 		margin: 0 0 .2em;
@@ -1227,7 +1227,7 @@
 		border: none;
 		border-radius: 0;
 		&:hover, &:focus{
-			background: lighten(#5b043f, 8);
+			background: lighten(#887667, 8);
 			border: none!important;
 		}
 	}
@@ -1273,9 +1273,28 @@
 			z-index: 3;
 		}
 	}
+	.r-icon-down{
+		padding-left: 40px;
+		&:before{
+			content:'';
+			background: url('../images/r_icon05.png')no-repeat center center;
+			background-size: 100% auto;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top:8px;
+			left:10px;
+			z-index: 3;
+		}
+	}
 	@include screen('mobile') {
 		float:none;
-		margin-top: 0em;	
+		margin-top: 0em;
+		.btn{
+			display: block;
+			width:100%;
+			text-align: left;
+		}	
 	}
 }
 
@@ -1682,7 +1701,48 @@
 		display: none;
 	}
 }
+.switch2{
+	width:50px;
+	height: 29px;
+	position: relative;
+	background: #fcfaf3;
+	border: solid 1px #d6cdc5;
+	border-radius: 3px;
+	margin: 3px auto;
+	@include screen('mobile') {
+		display: inline-block;
+	}
+	.on{
+		width: 35px;
+		border-radius: 3px;
+		color:#fff;
+		background: #6cb76c;
+		font-weight: bold;
+		cursor: pointer;
+		padding: 2px 5px;
+		font-size: .75em;
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		left:0;
+		display: none;
 
+	}
+	.off{
+		width: 35px;
+		border-radius: 3px;
+		color:#fff;
+		background: #ea523d;
+		font-weight: bold;
+		cursor: pointer;
+		padding: 2px 5px;
+		font-size: .75em;
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		right:0;
+	}
+}
 .upload3{
 	ul{
 		margin: 0;
@@ -1977,4 +2037,153 @@
 		}
 
 	}
+}
+
+
+
+.fun01{
+	display:flex;
+	position: relative;
+	clear: both;
+	@include screen('mobile') {
+		flex-wrap:wrap;
+	}
+	.items{
+		flex:0 0 200px;
+		padding:5px 5px 5px 0;
+		@include screen('mobile') {
+			flex:1 1 100%;
+			padding:5px 0;
+		}
+	}
+	.isbn_qs{
+		flex:0 1 300px;
+		padding: 0px 10px;
+		border-left: dotted 1px #ccc;
+		margin-left: 5px;
+		@include screen('mobile') {
+			flex:1 1 100%;
+			border-left: none;
+			margin-left: 0;
+			padding: 0px 10px 0 0;	
+		}
+		.txtinput{
+			width:160px;
+			border-radius: 0;
+			padding:6px 5px!important;
+			line-height: 1.4em;
+			vertical-align: middle;
+			margin: 0 2px;
+		}
+		.btn{
+			padding:6px 10px!important;
+			border-radius: 0;
+			line-height: 1.4em;
+		}
+	}
+	.collapsible {
+		// background-color: #777;
+		// color: white;
+		cursor: pointer;
+		padding:6px 10px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		margin: 0;
+		line-height: 1.4em;
+		border-radius: 0;
+		&:after {
+			content: '\002B';
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+			margin-top: -2px;
+			font-size: 1em;
+
+		}
+		&:hover{
+			background-color: #555;
+			padding:5px 10px!important;
+		}
+	}
+	.active:after {
+		content: "\2212";
+		font-size: .875em;
+		margin-top: 0px;
+
+	}
+	.content {
+		padding: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		background-color: #fff;
+		position: absolute;
+		width:194px;
+		box-shadow: 0 0 5px 1px #ccc;
+		@include screen('mobile') {
+			position: relative;	
+			width:99.9%;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				margin: 0;
+				padding: 0;
+				border-bottom: dotted 1px #ccc;
+				a{
+					padding: 8px 10px;
+					display: block;
+					color:#333;
+					&:hover{
+						color:#5b043f;
+						background: #fdfaf1;
+					}
+				}
+				.num{
+					color:#ff3e4d;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
+.check{
+	background: #555;
+	color:#fff;
+	padding: .2em;
+	width: 6em;
+	display: block;
+	text-align: center;
+}
+.check-ok{
+	background: #6cb76c;
+	color:#fff;
+	padding: .2em;
+	width: 6em;
+	display: block;
+	text-align: center;
+
+}
+.check-no{
+	background: #ff3e4d;
+	color:#fff;
+	padding: .2em;
+	width: 6em;
+	display: block;
+	text-align: center;
+
+}
+.billinfo{
+	min-width: 4em;
+	display: inline-block;
+	text-align: center;
+
+}
+.bill-ok{
+	color:#ff3e4d;
 }
