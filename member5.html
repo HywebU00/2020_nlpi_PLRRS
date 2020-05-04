@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>公共出借權登記系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- slick css-->
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+<!-- animate css-->
+<link rel="stylesheet" href="css/animate.min.css">
+<!-- hyUI css -->
+<link rel="stylesheet" href="css/hyui.css">
+<!-- favicon -->
+<link href="images/favicon.png" rel="icon" type="image/x-icon">
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <!-- header、block1 background同張圖需套2個位置，圖檔名稱:背景1(mainbg.jpg)、背景2(mainbg2.jpg)，可供客戶自行上稿 -->
+        <header class="header"  style="background: #d9cfc6 url('images/mainbg.jpg');">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+
+                <div class="weltxt">歡迎，<a href="#">A123456789 劉阿淇</a><span><img src="images/icon-warning2.png" alt="尚未驗證身分通過"></span></div>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <!-- 一組ul預設靠右 -->
+                    <!-- 兩組ul已寫JQ靠左靠右 -->
+                    <ul>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </nav>
+                <!-- navigation End -->
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="公共出借權登記系統" /></a>
+                </h1>
+
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">登記作品</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">暫存清單</a></li>
+                        <li><a href="#">已登記作品</a></li>
+                        <li><a href="#">代註冊帳號</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- SP star -->
+            <section class="sp temp">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">會員端首頁</a></li>
+                            <li>已登記作品</li>
+                        </ul>
+                    </div>
+                    <!-- h2節點 -->
+                    <h2 class="title">已登記作品</h2>
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="icon_back"><a href="#">回上一頁</a></li>
+                        </ul>
+                    </div>
+                    <!-- 書目資訊 star -->
+                    <table class="infotb1">
+                        <caption>書目資訊</caption>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>9789573311478</td>
+                        </tr>
+                        <tr>
+                            <th>書名</th>
+                            <td>登記作品書目名稱書名書名書名</td>
+                        </tr>
+                        <tr>
+                            <th>作者</th>
+                            <td>作者C; 作者D</td>
+                        </tr>
+                        <tr>
+                            <th>出版者</th>
+                            <td>皇冠; 凌網文化聯合出版</td>
+                        </tr>
+                        <tr>
+                            <th>出版年</th>
+                            <td>1994</td>
+                        </tr>
+                    </table>
+                    <!-- 書目資訊 end -->
+
+                    <!-- 登記資訊 star -->
+                    <table class="infotb1">
+                        <caption>登記資訊</caption>
+                        <tr>
+                            <th>年度總借閱次數</th>
+                            <td>101 次</td>
+                        </tr>
+                        <tr>
+                            <th>是否登記為出版社</th>
+                            <td>
+                                <div class="flexbox">
+                                    <div class="items1">
+                                        <div class="switch"><span class="on">ON</span><span class="off">OFF</span></div>
+                                    </div>
+                                    <div class="items2"><span class="check-ok">審核通過</span></div>
+                                    <div class="items3">出版社數：2 家</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>登記作者</th>
+                            <td>
+                                <!-- flexbox star -->
+                                <div class="flexbox">
+                                    <div class="items1">
+                                        <input type="text" id="username" placeholder="作者C">
+                                    </div>
+                                    <div class="items2"><a href="#">N16541333003.pdf</a></div>
+                                    <div class="items2">
+                                        <!-- upload_grp star -->
+                                        <div class="upload_grp">
+                                            <input class="upload_file" type="text" readonly>
+                                            <div class="upload_btn">
+                                                <span>更換檔案</span>
+                                                <input type="file" class="check_file" />
+                                            </div>
+                                        </div>
+                                        <!-- upload_grp end -->
+                                    </div>
+                                    <div class="items2"><span class="check-no">審核不通過(關閉)</span></div>
+                                </div>
+                                <!-- flexbox end -->
+                                <!-- flexbox star -->
+                                <div class="flexbox">
+                                    <div class="items1">
+                                        <input type="text" id="username" placeholder="作者D">
+                                    </div>
+                                    <div class="items2"><a href="#">A123456789.pdf</a></div>
+                                    <div class="items2">
+                                        <!-- upload_grp star -->
+                                        <div class="upload_grp">
+                                            <input class="upload_file" type="text" readonly>
+                                            <div class="upload_btn">
+                                                <span>更換檔案</span>
+                                                <input type="file" class="check_file" />
+                                            </div>
+                                        </div>
+                                        <!-- upload_grp end -->
+                                    </div>
+                                    <div class="items2"><span class="check-ok">審核通過</span></div>
+                                </div>
+                                <!-- flexbox end -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>作者人數</th>
+                            <td><input type="text" id="" placeholder="2" style="width: 2em;"></td>
+                        </tr>
+                        <tr>
+                            <th>證明文件</th>
+                            <td>
+                             <!-- flexbox star -->
+                             <div class="flexbox">
+                                <div class="items1">
+                                    圖書版權：
+                                </div>
+                                <div class="items3"><a href="#">9789573311478.pdf</a></div>
+                                <div class="items3">
+                                    <!-- upload_grp star -->
+                                    <div class="upload_grp">
+                                        <input class="upload_file" type="text" readonly>
+                                        <div class="upload_btn">
+                                            <span>更換檔案</span>
+                                            <input type="file" class="check_file" />
+                                        </div>
+                                    </div>
+                                    <!-- upload_grp end -->
+                                </div>
+                            </div>
+                            <!-- flexbox end -->   
+                        </td>
+                    </tr>
+                </table>
+                <div class="btn_grp">
+                    <input name="" type="submit" value="重新送審" />
+                </div>
+                <!-- 登記資訊 end -->
+                <!-- 送審與審核紀錄 star -->
+                <table class="table_list infotb2">
+                    <caption>送審與審核紀錄</caption>
+                    <thead>
+                        <tr>
+                            <th>序號</th>
+                            <th>送審／審核日期時間</th>
+                            <th>審核結果</th>
+                            <th>註記</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="aCenter">1</td>
+                            <td class="aCenter">2020/01/31 16:33</td>
+                            <td>
+                                <ul>
+                                    <li><span class="check">待審核</span></li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">2</td>
+                            <td class="aCenter">2020/02/02 12:22</td>
+                            <td>
+                                <ul>
+                                    <li>出版社<span class="check-no2">審核不通過</span></li>
+                                    <li>作者C<span class="check-no2">審核不通過</span></li>
+                                    <li>作者D<span class="check-no2">審核不通過</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>系統通知：作者人數已由管理者變更為 3</li>
+                                    <li>審核通知：作品版權頁錯誤，請重新提供正確資訊</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">3</td>
+                            <td class="aCenter">2020/02/04 15:35</td>
+                            <td>
+                                <ul>
+                                    <li><span class="check-re">重新送審</span></li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">4</td>
+                            <td class="aCenter">2020/02/06 11:11</td>
+                            <td>
+                                <ul>
+                                    <li>出版社<span class="check-ok2">審核通過</span></li>
+                                    <li>作者C<span class="check-ok2">審核通過</span></li>
+                                    <li>作者D<span class="check-ok2">審核通過</span></li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">5</td>
+                            <td class="aCenter">2020/02/06 11:11</td>
+                            <td></td>
+                            <td>
+                                <ol>
+                                    <li>系統通知：此書目有出版社申請登記。重新審核</li>
+                                    <li>系統通知：此書目有作者申請登記。重新審核</li>   
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">6</td>
+                            <td class="aCenter">2020/03/12 16:40</td>
+                            <td>
+                                <ul>
+                                    <li>作者C<span class="check-no2">審核不通過</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>審核通知：作者已自行登記，無委託作者移除，不需再送審</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="aCenter">7</td>
+                            <td class="aCenter">2020/03/12 16:44</td>
+                            <td>
+                                <ul>
+                                    <li>出版社<span class="check-ok2">審核通過</span></li>
+                                    <li>作者D<span class="check-ok2">審核通過</span></li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <!-- 送審與審核紀錄 end -->
+                <!-- 補償金結算 star -->
+                <table class="table_list infotb2">
+                    <caption>補償金結算<span>(僅呈現此帳號可得結算結果)</span></caption>
+                    <thead>
+                        <tr>
+                            <th>序號</th>
+                            <th>結算狀態</th>
+                            <th>結算日期</th>
+                            <th>結算補償金額</th>
+                            <th>註記</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="aCenter">1</td>
+                            <td class="aCenter">已結算</td>
+                            <td class="aCenter">2020/04/01</td>
+                            <td class="aCenter">45.45 ntd</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="int">
+                    補償金結算公式：
+                    <ol>
+                        <li>出版者補償：((借閱次數*補償金/次)*出版者比例)/出版者家數</li>
+                        <li>作者補償：((借閱次數*補償金/次)*作者比例)/作者人數</li>
+                    </ol>
+                </div>
+                <!-- 補償金結算 end -->
+
+            </div>
+        </section>
+        <!-- SP End -->
+
+    </div>
+
+    <!-- main end -->
+
+    <!-- footer Start-->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+            <div class="footer_logo">
+                <img src="images/f_logo.png" alt="" class="img-responsive">
+            </div>
+            <div class="footer_info">
+                <ul class="footer_link">
+                    <li><a href="javascript:;">隱私權政策</a></li>
+                    <li><a href="javascript:;">網站安全政策</a></li>
+                    <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                </ul>
+                <p class="Copyright">國立公共資訊圖書館版權所有 © 2020 All Rights Reserved.<br>
+                建議瀏覽器：IE11.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)</p>
+            </div>
+            <div class="footer_icon">
+                <ul>
+                    <li>
+                        <a target="_blank" href="javascript:;" title="另開視窗">關於「公共出借權」計畫</a>   
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" title="另開視窗">公共出借權登記系統操作線上教學</a>   
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" title="另開視窗">意見回饋
+                        </a>   
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+</div>
+<a href="javascript:;" class="scrollToTop">回頁首</a>
+<!-- JQ -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- 外掛 plugin js -->
+<script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+<script src="vendor/slick/slick.min.js "></script><!-- slick -->
+<script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+    {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       false,       // default
+                      live:         true        // default
+                  }
+                  )
+    wow.init();
+</script>
+<script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+<script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+<script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+
+<!-- hyUI -->
+<script src="js/hyui.js"></script>
+<!-- 客製js -->
+<script src="js/customize.js"></script>
+
+</body>
+
+</html>

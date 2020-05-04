@@ -332,6 +332,7 @@ table {
 th, td{
     border:none;
 }
+
 .aLeft{
     text-align: left;
 }
@@ -340,6 +341,15 @@ th, td{
     @include screen('mobile') {
         text-align: left;
     }
+}
+.check{
+    margin: .2em auto;
+}
+.check-ok{
+    margin: .2em auto;
+}
+.check-no{
+    margin: .2em auto;
 }
 
 .data{
