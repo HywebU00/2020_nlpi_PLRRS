@@ -65,6 +65,10 @@
 .register2{
 	margin: 2em 0;
 	clear: both;
+	h3{
+		margin: .5em;
+		font-size: 1.25em;
+	}
 	.flow{
 		margin: 3em 0 2em;
 		ul{
@@ -178,8 +182,53 @@
 		}
 		.t1{
 			color:#333;
+			a{
+				background: #ed6658;
+				color:#fff;
+				padding: .2em .3em;
+				display: inline-block;
+				border-radius: 3px;
+				font-size: .875em;
+				line-height: 1em;
+				font-weight: bold;
+				&:hover{
+					background: darken(#ed6658, 6);
+				}
+			}
+		}
+
+	}
+
+
+	// 	.upload_grp{
+	// 		position: relative;
+	// 		.upload_file{
+	// 			width:80%!important;
+	// 			background: #fff;
+	// 		// border: none;
+
+	// 		@include screen('xs_mobile') {
+	// 			width:60%!important;
+	// 		}
+	// 	}
+	// 	.upload_btn{
+	// 		right: 1em;
+	// 	}
+	// }
+
+
+
+	.status1{
+		color:#c00;
+		font-size: 1.25em;
+		span{
+			color:#333;
+			font-size: .813em;
+			margin-left: .5em;
 		}
 	}
+
+
 }
 
 .identity{
@@ -1618,6 +1667,9 @@
 			}
 		}
 	}
+	.function{
+		margin-top: -2.8em;
+	}
 }
 .m_icon{
 	img{
@@ -2361,4 +2413,7 @@
 	ol{
 		margin: 0;
 	}
+}
+.radiobox{
+	padding-top: 8px!important;
 }
