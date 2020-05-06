@@ -14,14 +14,14 @@
     box-shadow:1px 1px 15px RGBA(0, 0, 0, .5);
     animation: scaleUp .5s ease-out;
     @include screen('mobile') {
-       width: 90%;
-       margin: 0 auto!important;
-       left: 5%;
-   }
-   h2 {
+     width: 90%;
+     margin: 0 auto!important;
+     left: 5%;
+ }
+ h2 {
         // border-bottom: 1px solid $primaryColor;
-        padding-bottom: .5em;
-        margin: 1em 0!important;
+        padding-bottom: .1em!important;
+        margin: .5em 0 .3em!important;
         font-size: 1.45em!important;
     }
     .close {
@@ -51,7 +51,7 @@
         opacity: 1;
     }
 }
-.modal_overlay {
+.modal_overlay, .modal_overlay2, .modal_overlay3, .modal_overlay4, .modal_overlay5, .modal_overlay6, .modal_overlay7, .modal_overlay8, .modal_overlay9, .modal_overlay10, .modal_overlay11, .modal_overlay12, .modal_overlay13, .modal_overlay14, .modal_overlay15 {
     position: fixed;
     display: block;
     top: 0;

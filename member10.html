@@ -100,11 +100,11 @@
                 <div class="breadcrumb">
                     <ul>
                         <li><a href="#">首頁</a></li>
-                        <li>代註冊帳號</li>
+                        <li>個人帳號管理</li>
                     </ul>
                 </div>
                 <!-- h2節點 -->
-                <h2 class="title">代註冊帳號</h2>
+                <h2 class="title">個人帳號管理</h2>
                 <!-- function功能區塊 -->
                 <div class="function">
                     <ul>
@@ -113,38 +113,45 @@
                 </div>
                 <!-- register2 Start -->
                 <section class="register2">
-                    <h3>新增作者帳號</h3>
                     <form action="" class="form_grid">
                         <div class="form_grp">
-                            <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>請選擇作者身分</label>
-                            <div class="form_content radiobox">
-                                <label><input name="sampleRadio3" type="radio" value="" checked="">個人</label>
-                                <label><input name="sampleRadio3" type="radio" value="">團體</label>
+                            <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分類型</label>
+                            <div class="form_content">
+                                <p>作者｜個人</p>
                             </div>
                         </div>
                         <div class="form_grp">
                             <label for="username" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>帳號</label>
                             <div class="form_content">
-                                <input type="text" id="username" value="請使用身分證字號或統一編號作為帳號" class="txtinput">
-                                <span class="ok">帳號可用</span>
-                                <p>請輸入身份證字號或統一編號</p>   
+                                <p>A123456789</p>   
                             </div>
                         </div>
                         <div class="form_grp">
-                            <label for="email" class="form_title">請輸入email</label>
+                            <label for="username" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>帳號狀態</label>
                             <div class="form_content">
-                                <input type="text" id="email" value="請輸入email" class="txtinput">
-                                <span class="ok">email格式正確</span>
-                                <p>選填，後續可透過此email通知作者本人</p>
+                                <p>待審核（需先完成資料填寫並進行身分驗證）</p>   
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="username" class="form_title">變更密碼</label>
+                            <div class="form_content">
+                                <button class="btn">變更密碼</button>  
+                            </div>
+                        </div>
+                        <div class="form_grp">
+                            <label for="email" class="form_title">email</label>
+                            <div class="form_content">
+                                <input type="text" id="email" value="liucc@hyweb.com.tw" class="txtinput">
+                                <span class="ok">email已驗證</span>
+                                <label><input type="checkbox">變更email（變更後需重新驗證）</label>
                             </div>
                         </div>
 
                         <form action="" class="form_grid">
                             <div class="form_grp">
-                                <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>帳號名稱</label>
+                                <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>名稱</label>
                                 <div class="form_content">
-                                    <input name="" type="text" value="請輸入真實姓名或完整團體名稱">
-                                    <p>請輸入作者的真實姓名或團體完整名稱，請務必輸入正確名稱</p>   
+                                    <input name="" type="text" value="劉阿淇">
                                 </div>
                             </div>
 
@@ -168,7 +175,7 @@
                                         <option value="">...</option>
                                     </select>
                                     <input name="" type="text" value="請輸入戶籍地址或公司登記地址">
-                                    <p>請輸入作者戶籍地址或公司登記地址</p>
+                                    <p>請輸入戶籍地址或公司登記地址</p>
                                 </div>
                             </div>
 
@@ -214,65 +221,173 @@
                                 <label for="username" class="form_title">作者筆名／團體別名</label>
                                 <div class="form_content">
                                     <div class="keywordPool">
-                                       <ul>
-                                          <li class="pdLabel" data-value="筆名123">筆名一<span class="removeThis"></span></li><li class="pdLabel" data-value="筆名456">筆名二<span class="removeThis"></span></li><li class="addOne"><input type="text" placeholder="" tempph=""><span class="addThis">+</span></li>
-                                      </ul>
-                                  </div>
-                                  <p>選填，可輸入多組筆名或別名提供審核與比對。多組請使用ENTER或「,」分隔</p>
+                                     <ul>
+                                      <li class="pdLabel" data-value="筆名123">筆名一<span class="removeThis"></span></li><li class="pdLabel" data-value="筆名456">筆名二<span class="removeThis"></span></li><li class="addOne"><input type="text" placeholder="" tempph=""><span class="addThis">+</span></li>
+                                  </ul>
                               </div>
+                              <p>選填，可輸入多組筆名或別名提供審核與比對。多組請使用ENTER或「,」分隔</p>
                           </div>
+                      </div>
 
-                          <div class="form_grp">
-                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>匯款帳號</label>
-                            <div class="form_content form_inline account-num">
-                                <input name="" type="text" value="匯款戶名">
-                                <label><input type="checkbox" disabled=”disabled”>同真實姓名或團體公司名</label>
-                                <br>
-                                <select name="" id="">
-                                    <option value="">請選擇</option>
-                                    <option value="">001</option>
-                                    <option value="">002</option>
-                                    <option value="">003</option>
-                                    <option value="">004</option>
-                                    <option value="">...</option>
-                                </select>
-                                <input name="" type="text" value="請輸入本人/公司金融帳號">
-                                <p>匯款帳號需為本人/公司戶頭。戶名需與姓名或公司、團體名相同</p>
-                            </div>
+                      <div class="form_grp">
+                        <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>匯款帳號</label>
+                        <div class="form_content form_inline account-num">
+                            <input name="" type="text" value="匯款戶名">
+                            <label><input type="checkbox" disabled=”disabled”>同真實姓名或團體公司名</label>
+                            <br>
+                            <select name="" id="">
+                                <option value="">請選擇</option>
+                                <option value="">001</option>
+                                <option value="">002</option>
+                                <option value="">003</option>
+                                <option value="">004</option>
+                                <option value="">...</option>
+                            </select>
+                            <input name="" type="text" value="請輸入本人/公司金融帳號">
+                            <p>匯款帳號需為本人/公司戶頭。戶名需與姓名或公司、團體名相同</p>
                         </div>
-
-                        <div class="form_grp">
-                            <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>作者委託具結書</label>
-                            <div class="form_content form_inline upload_grp">
-                                <input class="upload_file" type="text" readonly>
-                                <div class="upload_btn">
-                                    <span>選擇檔案</span>
-                                    <input type="file" class="check_file" />
-                                </div>
-                                <p class="t1">代註冊帳號與登記作品，必需取得作者授權委託書，請先下載「作者委託具結證明文件 (<a href="#">DOCX</a> / <a href="#">ODF</a> / <a href="#">PDF</a>)」範本、並取得作者委託授權簽章，方可代替作者進行註冊。<br>
-                                    代註冊後需經過審核，審核通過後即可開始幫此作者登記作品。且登記時不需要重複再上傳此作者之委託書。
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
 
-                </form>
+                    <div class="form_grp">
+                        <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>身分驗證</label>
+                        <div class="form_content">
+                            <p>待驗證</p>
+                            <!-- tabSet star -->
+                            <div class="tabSet">
+                                <section class="tabs r-work">
+                                    <h3 class="tabItem active"><a href="#" class="tabicon03">上傳證明文件</a></h3>
+                                    <!--選到的頁籤項目-->
+                                    <div class="tabContent">
+                                        <!-- upload star -->
+                                        <div class="upload_grp">
+                                            <input class="upload_file" type="text" readonly>
+                                            <div class="upload_btn">
+                                                <span>選擇上傳檔案</span>
+                                                <input type="file" class="check_file" multiple/>
+                                            </div>
+                                            <div class="btn_grp">
+                                                <button class="btn btn-submit" id="openModal">送出驗證</button>
+                                            </div>
+                                            <p class="txtmsg">欲進行登記作品與補償金領取作業，請先檢附證明文件進行身分審核</p>
+                                            <dl class="format">
+                                                <dt>個人自行註冊及登記具結書範本下載：</dt>
+                                                <dd><a href="#" class="doc">DOCX</a></dd>
+                                                <dd><a href="#" class="odf">ODF</a></dd>
+                                                <dd><a href="#" class="pdf">PDF</a></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- upload end -->
+                                    </div>
+                                    <h3 class="tabItem"><a href="#" class="tabicon04" id="openModal2">憑證驗證</a></h3>
+                                    <div class="tabContent">
+                                        <!-- cardbox star -->
+                                        <div class="cardbox">
+                                            <div class="leftblock">
+                                                <ol>
+                                                    <li>請將卡片插入讀卡機後，點選「讀取卡片」</li>
+                                                    <li>請輸入PIN碼</li>
+                                                    <li>點選送出</li>
+                                                </ol>
+                                                <div class="pic">
+                                                    <img src="images/fpLnafG.png" alt="自然人憑證">
+                                                </div>
+                                            </div>
+                                            <div class="rightblock">
+                                                <!-- 讀取卡片 star -->
+                                                <button type="button" class="btn">讀取卡片</button>
+                                                <br>
+                                                <label for="username"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>卡片PIN碼:</label>
+                                                <input type="text" id="username" placeholder="請輸入PIN碼">
+                                                <div class="btn_grp">
+                                                    <button class="btn btn-submit">送出</button>
+                                                </div>
+                                                <!-- 讀取卡片 end -->
+                                                <!-- 驗證身分(資料切換) star -->
+                                                <button type="button" class="btn">重新讀取卡片</button>
+                                                <ul>
+                                                 <li>身分證字號：A123456789</li>
+                                                 <li>姓名：劉阿淇</li>
+                                             </ul>
+                                             <p class="red">請注意，需與帳號的身分證與姓名完全符合方可驗證成功</p>
 
-            </form>
-        </section>
-        <!-- register2 End -->
-        <!--視窗8-->
-        <div id="modal8" class="modal8">
-            <h2>確定新增作者帳號？</h2>
-            <p>代作者註冊帳號需取得作者委託書。<br>
-            點選「確定」新增並儲存、點選「取消」繼續編輯</p>
-            <div class="btn_grp">
-                <input name="" type="submit" value="確定" />
+                                             <div class="btn_grp">
+                                                <button class="btn btn-submit" id="openModal3">驗證身分</button>
+                                            </div>
+                                            <!-- 驗證身分 end -->
+                                        </div>
+                                    </div>
+                                    <!-- cardbox end -->
+                                </div>
+                            </section>
+                        </div>
+                        <!-- tabSet end -->
+                        <!--視窗-->
+                        <div id="modal1" class="modal">
+                            <h2>資料送出成功</h2>
+                            <p>需待管理員審核方可開通登記權限，您可於會員端檢視審核狀態</p>
+                            <div class="btn_grp">
+                                <input name="" type="submit" value="確定" />
+                            </div>
+                        </div>
+                        <div id="modal2" class="modal2">
+                            <h2>憑證驗證電子具結書</h2>
+                            <div class="declare">
+                                <p>本公司/團體 凌網文化 (團體姓名)，為辦理「公共出借權為辦理「公共出借權登記系統與管理平臺」之帳號註冊及作品登記等事項，具結所提供之一切證明文件與資料是實，如有不實將承擔相應的法律責任。具結事項如下：
+                                    <br>
+                                    一、本公司/團體確認所提供之個人資料為正確之資料。<br>
+                                    二、本公司/團體已閱讀並同意「公共出借權登記系統與管理平臺個人資料蒐集處理利用告知聲明」。<br>
+                                    三、本公司/團體於「公共出借權登記系統與管理平臺」登記本公司/團體所出版之作品，且確認本公司/團體對於該作品有出版事實，或有重要貢獻程度可列為作者或共同作者，故就本公司/團體貢獻部分作具結，如有爭議願接受該平臺「爭議審核小組」調處。
+                                    <br>
+                                    特 此 具 結
+                                </p>
+                            </div>
+                            <div class="btn_grp">
+                                <input name="" type="submit" value="同意" />
+                                <input name="" type="reset" value="取消" />
+                            </div>
+                            <p class="txtmsg">請注意，當您按下同意時，便表示您同意此份具結宣告</p>
+                        </div>
+                        <div id="modal3" class="modal3">
+                            <h2>身分驗證成功</h2>
+                            <p>身分驗證成功，已自動審核通過<br>
+                            登記作品功能已開通</p>
+                            <div class="btn_grp">
+                                <input name="" type="submit" value="確定" />
+                            </div>
+                        </div>
+                        <div id="modal4" class="modal4">
+                            <h2>編修儲存成功</h2>
+                            <p>帳號資訊已儲存成功<br>
+                            請注意，完成驗證身分前將無法使用登記作品功能</p>
+                            <div class="btn_grp">
+                                <input name="" type="submit" value="確定" />
+                            </div>
+                        </div>
+                        <!--視窗end-->
+                    </div>
+                </div>
+
             </div>
-        </div>
+            <div class="btn_grp">
+                <input name="" type="submit" value="編修儲存" id="openModal4">
+            </div>
 
+        </form>
+
+    </form>
+</section>
+<!-- register2 End -->
+<!--視窗8-->
+<div id="modal8" class="modal8">
+    <h2>確定新增作者帳號？</h2>
+    <p>代作者註冊帳號需取得作者委託書。<br>
+    點選「確定」新增並儲存、點選「取消」繼續編輯</p>
+    <div class="btn_grp">
+        <input name="" type="submit" value="確定" />
     </div>
+</div>
+
+</div>
 </div>
 <!-- main end -->
 

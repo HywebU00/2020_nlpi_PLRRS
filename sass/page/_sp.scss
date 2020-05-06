@@ -196,6 +196,21 @@
 				}
 			}
 		}
+		.btn{
+			display: inline-block;
+			padding: .3em .8em;
+			text-decoration: none;
+			background:#5b043f;
+			color:#fff;
+			font-weight: bold;
+			border: none;
+			margin: 0;
+			border-radius: 0;
+			&:hover, &:focus{
+				background: lighten(#5b043f, 8);
+				border: none;
+			}
+		}
 
 	}
 
@@ -1543,6 +1558,116 @@
 
 }
 
+//batch3
+.batch3{
+	background: #fff;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 1em;
+	box-shadow: 0 0 8px #dad5cf;
+	.leftbox{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(8);
+		@include make-lg-column(8);
+		@include gutter();
+		border-right: dotted 1px #a09489;
+		@include screen('tablet') {
+			border: none;
+		}
+
+	}
+	.rightbox{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(4);
+		@include make-lg-column(4);
+		@include gutter();
+		padding: 1.5em 0;
+
+	}
+	h4{
+		margin: .5em 0 .5em 1em;
+		font-size: 1.125em;
+		line-height: 1em;
+		text-align: center;
+
+		@include screen('mobile') {
+			margin: .5em 1em;
+		}
+	}
+	.filedown{
+		padding: 0;
+		margin: 0 0 0 1em;
+		list-style: none;
+		text-align: center;
+		@include screen('mobile') {
+			margin: 0 1em;
+		}
+		dt{
+			display: block;
+			float: none;
+			font-weight: bold;
+			margin: 0;
+
+			a{
+				padding: 5px 8px;
+				text-align: center;
+				background-color: #5b043f;
+				color: #fff;
+				text-decoration: none;
+				display: block;
+				margin-bottom: 1em;
+				&:hover {
+					background: #9b2871;
+				}
+			}
+		}
+		dd{
+			margin: 0!important;
+			padding: 0;
+			display: inline-block;
+			font-size: 1em!important;
+			line-height: 1em;
+			font-weight: bold;
+
+
+			a{
+				padding: 5px 8px;
+				text-align: center;
+				background-color: #a09489;
+				color: #fff;
+				text-decoration: none;
+				display: block;
+				&:hover {
+					background: darken(#a09489,8);
+				}
+			}
+		}
+
+	}
+
+	.btn_grp{
+		padding: .5em 0!important;
+	}
+	.btn3{
+		display: block;
+		width: 10em;
+		margin: 0 auto;
+		color:#fff;
+		font-weight: bold;
+		display: block;
+		padding: .4em 3em .4em 1em;
+		text-align: left;
+		line-height: 1.3em;
+		background:#5b043f url('../images/btn-arrow.png')no-repeat right .8em;
+		&:hover{
+			background: #9b2871 url('../images/btn-arrow.png')no-repeat right .8em;
+		}
+	}
+
+}
+
 
 //batch2
 .batch2{
@@ -1912,12 +2037,12 @@
 
 .upload4{
 	ul{
-		margin: 0;
-		padding: 0;
+		margin: 0!important;
+		padding: 0!important;
 		list-style: none;
 		li{
 			margin: 0;
-			padding: 8px 0;
+			padding: 5px 0;
 			position: relative;
 			// border-bottom: dotted 1px #ccc;
 			.neme{
@@ -1928,6 +2053,22 @@
 				background: #eee;
 				display: flex;
 				margin:-2em 0 0 5em;
+				padding: 5px;
+				@include screen('mobile') {
+					flex-wrap:wrap;	
+				}
+				span{
+					flex:2;
+
+				}
+				.upload_file{
+					background: #fff;
+				}
+			}
+			.box2{
+				background: #eee;
+				display: flex;
+				margin:0;
 				padding: 5px;
 				@include screen('mobile') {
 					flex-wrap:wrap;	
@@ -2416,4 +2557,82 @@
 }
 .radiobox{
 	padding-top: 8px!important;
+}
+
+
+.lp-app-info{
+	text-align: left;
+	line-height: 1.4em;
+	.name{
+		font-size: 1.125em;
+		margin-bottom: .3em;
+		span{
+			font-weight: bold;
+			color:#ed6658;
+			padding-right: .2em;
+			margin-right: .2em;
+		}	
+	}
+
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			margin: 0 .5em 0 0;
+			padding: 0 1.5em 0 0;
+			position: relative;
+
+			&:after{
+				content: "｜";
+				position: absolute;
+				right:0;
+				top:.1em;
+				font-size: .875em;
+				color:#bba796;
+			}
+			@include screen('xs_mobile') {
+				display: block;
+				margin: 0;
+				padding: 0 0 0 1em;
+				&:after{
+					content: "·";
+					position: absolute;
+					right:auto;
+					left:.2em;
+					top:.1em;
+					font-size: .875em;
+					color:#a18e7e;
+				} 
+			}
+		}
+	}
+	a{
+		color:#5b043f!important;
+		&:hover{
+			color: darken(#5b043f,8)!important;
+		}
+	}
+
+}
+
+.msg1{
+	padding: 4px .5em;
+	text-decoration: none;
+	background:#5b043f;
+	color:#fff!important;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+.msg2{
+	padding: 4px .5em;
+	text-decoration: none;
+	background:#ff3e4d;
+	color:#fff!important;
+	font-weight: bold;
+	display: block;
+	text-align: center;
 }
